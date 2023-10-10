@@ -48,9 +48,10 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  transition: all 0.3s ease;
 }
 
-.question-box p {
+.question-answer {
   font-size: 12px;
   width: 260px;
   padding: 5px 0;
@@ -64,8 +65,18 @@ body {
   width: 300px;
 }
 
-.question-slide h4 {
+.question-title {
   font-size: 15px;
   font-weight: 400;
   padding: 4px 0;
+}
+
+.arrow-icon-up {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+.question-box.active {
+  height: 80px;
+  font-weight: 700;
 }

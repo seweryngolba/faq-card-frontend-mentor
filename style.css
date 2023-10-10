@@ -39,6 +39,7 @@ body {
 
 .faq-title {
   margin: 50px 0 30px 0;
+  text-align: center;
 }
 
 .question-box {
@@ -79,4 +80,47 @@ body {
 .question-box.active {
   height: 80px;
   font-weight: 700;
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 820px;
+    height: 540px;
+    flex-direction: row;
+    gap: 50px;
+    overflow: hidden;
+    position: relative;
+  }
+  .main-photo {
+    width: 420px;
+    margin-top: 60px;
+    margin-left: -75px;
+  }
+  .bg-pattern {
+    position: absolute;
+    width: 520px;
+    left: -175px;
+    bottom: -35px;
+  }
+  .faq-title {
+    text-align: left;
+  }
+  .question-box {
+    width: 380px;
+    height: 70px;
+  }
+  .question-answer {
+    font-size: 14px;
+    width: 360px;
+  }
+  .question-slide {
+    width: 380px;
+  }
+  .question-title {
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  .question-title:hover {
+    color: orangered;
+  }
 }
